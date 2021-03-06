@@ -1,0 +1,73 @@
+.logo{
+    width:50px;
+    filter: grayscale(100%);
+    transition-duration: 0.5s;
+    transform:scale(0.9);
+}
+.logo:hover{
+    filter:none;
+    transform:scale(1);
+}
+.youtube-video{
+    width:365px;
+    height:315px;
+}
+
+.proPic{
+    filter: grayscale(100%);
+    transform:scale(0.9);
+    transition-duration: 0.5s;
+    width: 220px;
+    height:220px;
+}
+.proPic:hover{
+    filter:none;
+    transform:scale(1);
+}
+.horizontal-card{
+    width:90%;
+}
+hr{
+    background-color: black;
+    border:2px solid black;
+}
+.video{
+    width:560px;
+    margin:auto
+}
+.line-height{
+    line-height:45px
+}
+.text-size-100{
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+.button{
+    padding: 0px 5px;
+    width:fit-content;
+    height:30px;
+    border:2px solid blue;
+    border-radius:20px;
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+    cursor:pointer;
+    font-weight: 800;
+    color:blue;
+}
+.button:hover{
+    transform: scale(1);
+}
+@media (max-width: 768px){
+    .horizontal-card{
+        flex-direction:column;
+        width:100%;
+    }
+    .video{
+        width:100%;
+        margin-left:20px;
+        
+    }
+    .text-size-100{
+        font-size: 3vw;
+    }
+}

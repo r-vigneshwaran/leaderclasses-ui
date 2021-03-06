@@ -1,0 +1,45 @@
+:root {
+	--bg: #e5e5e5;
+	--cardBg: #f1f1f1;
+	--fg: #171717;
+	--linkFg: #2762f3;
+	--transDur: 0.25s;
+	font-size: calc(16px + (20 - 16)*(100vw - 320px)/(2560 - 320));
+}
+@keyframes flyIn {
+	from {
+		opacity: 0;
+		transform: translateY(3em);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.img-card{
+   width:fit-content;
+   animation: flyIn var(--transDur) ease-in;
+   box-shadow: 9px 10px 11px 1px rgba(0,0,0,0.83);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+.grid-container{
+    display: grid;
+  grid-template-columns: auto auto auto;
+}
+@media (max-width: 768px){
+    .grid-container{
+        display: grid;
+      grid-template-columns: auto ;
+    }
+}
+.grid-item{
+    padding: 20px;
+}
+.grid-item .image img{
+	width:500px;
+	height:350px
+}
+.inspiration{
+    width:90%
+}
